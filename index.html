@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremy Butler Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2fbb737e72.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Logo.png" class="logo" alt="Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Engineer</p>
+                <h1>Hello! I am <span>Jeremy</span><br>Butler from Maryland!</h1>
+            </div>
+        </div>
+    </div>
+
+<!------------------about----------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/image4.jpg" alt="About me">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a Towson University graduate with a
+                        B.S. in exercise science. I am a self-taught 
+                        software engineer with experience in HTML, CSS,
+                        and JavaScript.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Full Stack</span><br>Certified Full Stack Developer</li>
+                            <li><span>Web Development</span><br>HTML, CSS, JavaScript, React</li>
+                            <li><span>Backend Development</span><br>Express.js, PostgreSQL</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Certified Personal Trainer</span><br>Jan 2023-Jun 2024</li>
+                            <li><span>Facility Manager</span><br>Jan 2022-Dec 2022</li>
+                            <li><span>Facility Assistant</span><br>Oct 2021-Jan 2022</li>
+                            <li><span>Fitness Floor Attendant</span><br>Jan 2020-Oct 2021</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2024</span><br>Codecademy</li>
+                            <li><span>2022</span><br>Towson University</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------services----------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Full Stack Development</h2>
+                    <p>Combining backend and frontend knowledge to 
+                        create a complete website.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Web Development</h2>
+                    <p>Creating an accessible and pleasurable site for 
+                        user enjoyment and usability.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-computer"></i>
+                    <h2>Backend Development</h2>
+                    <p>Designing the data encryption and security for a 
+                        safe user environment.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-----------------portfolio------------------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <!--add img of work-->
+                <img src="images/example-work1.jpg" alt="logo">
+                <div class="layer">
+                    <h3>Caesar</h3>
+                    <p>A drawing off Caesar</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                    <!--add title of work-->
+                </div>
+            </div>
+            <div class="work">
+                <!--add img of work-->
+                <img src="images/example-work2.jpg" alt="logo">
+                <div class="layer">
+                    <h3>Get Out</h3>
+                    <p>A drawing of Get Out</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <!--add title of work-->
+                </div>
+            </div>
+            <div class="work">
+                <!--add img of work-->
+                <img src="images/example-work3.jpg" alt="logo">
+                <div class="layer">
+                    <h3>Eyeball</h3>
+                    <p>A drawing of an eyeball</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <!--add title of work-->
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!----------------contact---------------------->
+
+<div id="Contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p <i class="fa-solid fa-paper-plane"></i>jzbutler313@gmail.com</p>
+                <p <i class="fa-solid fa-phone"></i>443-422-9295</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/jeremy-butler-5847a0166"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="images/Jeremy_Butler_Resume copy.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> Jeremy Butler</p>
+    </div>
+</div>
+
+
+<!--------------------javascript--------------->
+
+    <script>
+        
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+</body>
+</html>
